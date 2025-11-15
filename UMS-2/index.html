@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Greenfield International University — Apply Now</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <img src="assets/logo.png" alt="Greenfield University" class="logo" />
+      <nav class="nav">
+        <a href="#overview">Overview</a>
+        <a href="#courses">Courses</a>
+        <a href="#placements">Placements</a>
+        <a href="#apply" class="cta">Apply Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap main-grid">
+
+    <!-- LEFT CONTENT -->
+    <section class="card content" id="overview">
+      <h1>Greenfield International University</h1>
+      <p class="lead">
+        A world-class university offering modern programs in Business, Computer Science, and Technology.
+      </p>
+
+      <section id="courses">
+        <h2>Courses</h2>
+        <ul class="course-list">
+          <li><strong>BBA (Business Analytics)</strong> — 3 years</li>
+          <li><strong>BCA (Computer Applications)</strong> — 3 years</li>
+          <li><strong>M.Tech (Artificial Intelligence)</strong> — 2 years</li>
+        </ul>
+        <div class="buttons">
+          <button id="feesBtn" class="btn btn-outline">Check Course-wise Fees</button>
+          <a href="brochure.pdf" class="btn btn-primary" download>Download Brochure</a>
+        </div>
+      </section>
+
+      <section id="placements">
+        <h2>Placements & Facilities</h2>
+        <p>
+          Greenfield University maintains a <strong>90% placement rate</strong> with top tech and business companies.
+        </p>
+        <ul class="facilities">
+          <li>International standard labs</li>
+          <li>Digital library + e-resources</li>
+          <li>Startup incubation center</li>
+          <li>On-campus hostels & sports complex</li>
+        </ul>
+      </section>
+    </section>
+
+    <!-- RIGHT FORM -->
+    <aside class="card form-card" id="apply">
+      <h3>Apply / Enquiry Form</h3>
+      <form id="leadForm" novalidate>
+
+        <label for="fullname">Full Name</label>
+        <input id="fullname" name="fullname" required placeholder="Your full name" />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com" />
+
+        <label for="phone">Phone (India)</label>
+        <input id="phone" name="phone" maxlength="10" inputmode="numeric" required placeholder="10-digit mobile" />
+
+        <label for="state">State</label>
+        <select id="state" name="state" required>
+          <option value="">Select state</option>
+          <option>Andhra Pradesh</option>
+          <option>Telangana</option>
+          <option>Tamil Nadu</option>
+          <option>Karnataka</option>
+          <option>Maharashtra</option>
+          <option>Delhi</option>
+        </select>
+
+        <label for="course">Course Interested</label>
+        <select id="course" name="course" required>
+          <option value="">Select course</option>
+          <option>BBA (Business Analytics)</option>
+          <option>BCA</option>
+          <option>M.Tech (AI)</option>
+        </select>
+
+        <label for="intake">Intake Year</label>
+        <select id="intake" name="intake" required>
+          <option value="">Select year</option>
+          <option>2025</option>
+          <option>2026</option>
+          <option>2027</option>
+        </select>
+
+        <label class="checkbox">
+          <input type="checkbox" id="consent" name="consent" required />
+          I consent to be contacted.
+        </label>
+
+        <button type="submit" class="btn btn-primary fullwidth">Submit</button>
+
+        <div id="formMsg" class="form-msg"></div>
+
+      </form>
+    </aside>
+
+  </main>
+
+  <!-- MODAL -->
+  <div id="modalBack" class="modal-back">
+    <div class="modal card">
+      <button id="modalClose" class="modal-close">✕</button>
+      <h3>Course-wise Fees</h3>
+      <div id="feesContent" class="fees-content">Loading...</div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Greenfield International University</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

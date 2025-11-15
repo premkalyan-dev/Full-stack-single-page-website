@@ -1,0 +1,8 @@
+{
+  "university": "Sunrise Private University",
+  "courses": [
+    { "name": "B.Tech (CSE)", "feeMin": 300000, "feeMax": 500000 },
+    { "name": "MBA", "feeMin": 200000, "feeMax": 400000 },
+    { "name": "B.Des", "feeMin": 150000, "feeMax": 350000 }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "university": "Greenfield International University",
+  "courses": [
+    { "name": "BBA (Business Analytics)", "feeMin": 120000, "feeMax": 200000 },
+    { "name": "BCA", "feeMin": 100000, "feeMax": 180000 },
+    { "name": "M.Tech (Artificial Intelligence)", "feeMin": 180000, "feeMax": 250000 }
+  ]
+}
